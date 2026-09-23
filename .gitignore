@@ -1,0 +1,41 @@
+# Environnements virtuels Python
+venv/
+.venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Fichiers de configuration sensibles et variables d'environnement
+.env
+.env.local
+*.env
+
+# Base de données locales / dumps temporaires
+*.sqlite3
+*.dump
+*.sql
+
+# Logs
+*.log
+
+# Node & Frontend (React / Vite / Next)
+node_modules/
+dist/
+build/
+.npm
+*.tsbuildinfo
+
+# IDEs et éditeurs de texte
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
