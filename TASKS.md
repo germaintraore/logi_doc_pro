@@ -4,9 +4,9 @@
 - **Titre** : Initialisation de l'environnement, Git/GitHub, puis des sous-projets Backend (Django) et Frontend (React).
 - **Objectif** : Configurer Git, lier le dépôt distant GitHub, puis initialiser `backend/` et `frontend/`.
 - **Statut** : `IN_PROGRESS`
-- **Sous-étape 1** : Initialisation Git local, création de `.gitignore`, premier commit et liaison GitHub. `EN COURS`
-- **Sous-étape 2** : Initialisation du projet Django avec configuration PostgreSQL. `À FAIRE`
-- **Sous-étape 3** : Initialisation du projet React avec Tailwind CSS. `À FAIRE`
+- [x] **Sous-étape 1** : Initialisation Git local, création de `.gitignore`, premier commit et liaison GitHub. `TERMINÉ`
+- [x] **Sous-étape 2** : Initialisation de l'environnement virtuel Python, dépendances et projet Django avec connexion PostgreSQL. `TERMINÉ`
+- [ ] **Sous-étape 3** : Initialisation du projet React avec Tailwind CSS dans `frontend/`. `EN COURS`
 
 ---
 

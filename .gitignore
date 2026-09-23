@@ -1,5 +1,5 @@
 # Environnements virtuels Python
-venv/
+venv_logi_doc_pro/
 .venv/
 env/
 ENV/
@@ -12,7 +12,11 @@ __pycache__/
 # Fichiers de configuration sensibles et variables d'environnement
 .env
 .env.local
+.env.example
 *.env
+
+COMMANDS_USE.md
+
 
 # Base de données locales / dumps temporaires
 *.sqlite3

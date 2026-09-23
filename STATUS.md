@@ -4,10 +4,11 @@
 **Phase actuelle** : Phase 0 — Setup & Architecture
 
 ## État des Modules
-- [ ] Setup Environnement & Structure du projet : `EN COURS` (Initialisation Git & Dépôt distant GitHub)
-- [ ] Backend Django + PostgreSQL Connection : `À FAIRE`
-- [ ] Frontend React + Design System Base : `À FAIRE`
-- [ ] Module Authentification : `À FAIRE`
+- [x] Setup Environnement & Git / GitHub : `TERMINÉ`
+- [x] Backend Django + PostgreSQL Connection : `TERMINÉ`
+- [ ] Frontend React + Design System Base : `EN COURS`
+- [ ] Module Authentification & Rôles (Admin / User) : `À FAIRE`
+- [ ] Modèles de Documents & Workflow de Modération : `À FAIRE`
 - [ ] Éditeur de Documents par Blocs : `À FAIRE`
 - [ ] Intégration Assistant IA : `À FAIRE`
 

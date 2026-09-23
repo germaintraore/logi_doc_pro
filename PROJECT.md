@@ -11,6 +11,11 @@ Une application web moderne, épurée et ultra-rapide pour concevoir, personnali
 2. **Plus focalisé que Canva** : Priorité au contenu rédigé et à la conformité professionnelle plutôt qu'au design graphique pur.
 3. **Assistance IA intégrée** : L'IA aide à formuler, corriger, résumer et structurer les sections du document instantanément.
 
+4. **Modèle Collaboratif & Modération** :
+   - **Administrateurs** : Créent et publient les modèles officiels. Ils examinent, ajustent et valident les propositions de modèles soumises par les utilisateurs avant publication globale.
+   - **Utilisateurs** : Utilisent et personnalisent les modèles disponibles pour leurs propres documents, et peuvent soumettre de nouveaux modèles à l'administrateur.
+
+
 ## Stack Technique
 - **Frontend** : React.js (SPA, Tailwind CSS pour le design moderne).
 - **Backend** : Django + Django REST Framework (DRF).
