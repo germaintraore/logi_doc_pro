@@ -15,3 +15,12 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 - Initialisation du dépôt Git local et synchronisation réussie avec le dépôt distant GitHub (`logi_doc_pro/main`).
 - Initialisation complète du Backend Django avec connexion native PostgreSQL (`logidocdb` / `logidocadmin`), support automatique des DLL Windows (`libpq.dll`) et exécution des migrations de base avec succès.
 - Formalisation des rôles et règles de gestion des Modèles (`PROJECT.md`, `docs/business/user-roles.md`, `docs/business/business-rules.md`).
+- Initialisation du Frontend React avec Vite 8, React 19, Tailwind CSS v3 (avec PostCSS/Autoprefixer). Page de statut de l'environnement opérationnelle sur `http://localhost:5173`.
+- **Phase 0 (Setup & Architecture) : TERMINÉE ✅**
+
+## [Démarrage Phase 1] — Authentification & Modèles de Données
+**Date** : 2026-09-23
+
+### En cours
+- `[TASK-002]` : Authentification JWT & CustomUser Django.
+
