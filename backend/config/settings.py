@@ -45,10 +45,11 @@ INSTALLED_APPS = [
    
 
     # Apps du projet (seront ajoutées ici : users, documents, ai_assistant)
-    # Apps users et 
+    # Apps users et frameword puis documents 
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist', 
     'users',
+    'documents',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
