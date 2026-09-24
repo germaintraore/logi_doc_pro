@@ -18,6 +18,18 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 - Initialisation du Frontend React avec Vite 8, React 19, Tailwind CSS v3 (avec PostCSS/Autoprefixer). Page de statut de l'environnement opérationnelle sur `http://localhost:5173`.
 - **Phase 0 (Setup & Architecture) : TERMINÉE ✅**
 
+## [0.2.0] — Phase 1 : Authentification & Base de données (en cours)
+**Date** : 2026-09-24
+
+### Ajouté
+- Création de la base `logi_doc_pro` (PostgreSQL 18, encodage UTF-8, `OWNER logi_doc_pro_user`).
+- Résolution du blocage `UnicodeDecodeError` psycopg2 : la base référencée n'existait pas ; le message d'erreur cp1252 de libpq masquait la vraie cause. Diagnostiqué via `psql` / `pg_isready`.
+- Migration `0001_initial` (app `users`, modèle `CustomUser` avec champ `role`) appliquée.
+- Endpoints d'authentification fonctionnels : `POST /api/auth/register/`, `GET/PATCH /api/auth/me/`, `POST /api/auth/token/`, `POST /api/auth/token/refresh/`.
+
+### En cours
+- Correction de `users/tests.py` et passage des 5 tests unitaires.
+
 ## [Démarrage Phase 1] — Authentification & Modèles de Données
 **Date** : 2026-09-23
 

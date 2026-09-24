@@ -14,6 +14,11 @@
 - **Titre** : Authentification JWT & Modèle Utilisateur Personnalisé.
 - **Objectif** : Créer l'app `users` dans Django avec un `CustomUser` gérant les rôles (`ADMIN` / `USER`), configurer `SimpleJWT` et protéger les routes API.
 - **Statut** : `IN_PROGRESS`
+- [x] `CustomUser` (AbstractUser + champ `role`) — migration `0001_initial` appliquée.
+- [x] Config SimpleJWT + routes `token/`, `token/refresh/` (`config/urls.py`).
+- [x] Endpoints `register/` et `me/` (`users/urls.py`).
+- [ ] `users/tests.py` corrigé et suite de tests au vert (5 tests).
+- [ ] Commit de la migration + tests + documentation.
 
 ---
 
