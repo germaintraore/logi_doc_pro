@@ -1,16 +1,55 @@
-# React + Vite
+# Frontend React — logi_doc_pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce dossier contient le frontend React/Vite du projet. Il est actuellement au stade de scaffold : l'interface affichée est un statut statique et ne constitue pas encore une application métier.
 
-Currently, two official plugins are available:
+## Prérequis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js compatible avec Vite 8, par exemple `^20.19.0` ou `>=22.12.0`.
+- npm.
 
-## React Compiler
+## Commandes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Depuis `frontend/` :
 
-## Expanding the ESLint configuration
+```powershell
+npm install
+npm run dev
+npm run lint
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `npm run dev` démarre le serveur Vite avec rechargement à chaud.
+- `npm run lint` exécute ESLint sur le projet.
+- `npm run build` produit le bundle de production dans `dist/`.
+- `npm run preview` sert localement le bundle construit.
+
+## État actuel
+
+- React 19, Vite 8 et Tailwind CSS 3 sont configurés.
+- `src/App.jsx` ne contient pas encore de Router ni de client API.
+- Les appels API devront être centralisés dans `src/services/`, conformément à `frontend/AGENTS.md`.
+- Aucun test frontend n'est configuré.
+- `src/index.css` contient actuellement une erreur de syntaxe ; le build doit être considéré en échec jusqu'à correction.
+- Les assets et styles issus du template Vite doivent être nettoyés au fur et à mesure.
+
+## Structure prévue
+
+```text
+src/
+├── components/   composants d'affichage réutilisables
+├── hooks/        logique React et règles d'état
+├── pages/        Login, Dashboard, catalogue, éditeur
+├── services/     appels API centralisés
+└── styles/       styles globaux et composants
+```
+
+Cette structure est une cible d'organisation ; elle ne doit pas créer des répertoires vides avant d'avoir une responsabilité claire.
+
+## Prochaines étapes
+
+1. Corriger `src/index.css` et valider `npm run build`.
+2. Définir la stratégie de stockage et de renouvellement des JWT.
+3. Ajouter un client API avec gestion des erreurs.
+4. Ajouter Router, pages Login/Dashboard et guards d'accès.
+5. Ajouter une stratégie de tests frontend avant les parcours métier.
